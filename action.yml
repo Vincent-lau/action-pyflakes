@@ -14,6 +14,9 @@ inputs:
       Default is github-pr-check.
       github-pr-review can use Markdown and add a link to rule page in reviewdog reports.
     default: 'github-pr-check'
+  diff: 
+    description: 'diff command (e.g. "git diff") for local reporter. Do not use --relative flag for git command.'
+    default: 'git diff'
 runs:
   using: 'docker'
   image: 'Dockerfile'

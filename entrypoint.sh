@@ -12,3 +12,4 @@ pyflakes . \
       -name="pyflakes" \
       -reporter="${INPUT_REPORTER:-github-pr-check}" \
       -level="${INPUT_LEVEL}" \
+      -diff="${INPUT_DIFF}" \
